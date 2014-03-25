@@ -10,7 +10,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var main = require('./routes/main');
-var projects = require('./routes/main');
+var projects = require('./routes/projects');
 var comments = require('./routes/comments');
 var blog = require('./routes/blog');
 var app = express();
@@ -30,6 +30,8 @@ app.use(main);
 app.use(projects);
 app.use(comments);
 app.use(blog);
+
+// mongoose.connect('mongodb://localhost/portfolio');
 
 // development only
 if ('development' == app.get('env')) {
