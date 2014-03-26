@@ -1,0 +1,15 @@
+extends layout
+
+block blogPosts
+	.row
+		-if(posts != null)
+			-each post in posts
+				.col-sm-12.post
+					section.postList.title(class='#{post.title}')
+						.name
+							a(href='/blog/#{post._id}')
+								h4.title #{post.title}
+						.content
+							p.contentPost #{post.content}
+						.date
+							p.datePosted #{post.created_at}

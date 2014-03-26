@@ -8,7 +8,11 @@ html
     script(src='/javascripts/xhr.js')
     link(href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/stylesheets/update-form.css')
+    link(href='/fonts/font.css') 
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css' rel='stylesheet')
+     
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
   body
     block content
 
@@ -16,3 +20,8 @@ html
       .row-fluid
         .col-lg-10.col-md-10.col-sm-10#projects
           block projectList
+
+    .container
+      .row-fluid
+        .col-lg-10.col-md-10.col-sm-10#postList
+          block blogPosts

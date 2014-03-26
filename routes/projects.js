@@ -101,7 +101,6 @@ var projectModel = mongoose.model('project', projectSchema);
 module.exports = function() {
 	app.get('/projects', this.getAllProjects);
 	app.get('/projects/create-project', this.showCreateProject);
-	app.get('projects')
 	app.post('/projects', this.createNewProject);
 	app.get('/projects/:id', this.editProject);
 	app.put('/projects/:id', this.updateProject);

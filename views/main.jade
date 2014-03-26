@@ -1,3 +1,53 @@
 extends layout
 
 block content
+  nav.navbar.navbar-default(role='navigation')
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+      a.navbar-brand(href='#') Home 
+      //- Place icon instead in the future ***********
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        //- li.active
+        //-   a(href='#') About
+        //- li
+        //-   a(href='#') 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Menu
+            b.caret
+          ul.dropdown-menu
+            li
+              a(href='#') About
+            li
+              a(href='#') Projects
+            li.divider
+            li
+              a(href='#') Blog
+            li.divider
+  section#intro.billboard
+      div#title-page
+        img(src='/images/rook.svg')#title-logo.bit-tower.green.title
+        h1#title-text-header.center.title TYLER BORIGHT, THE CHAMP
+        p The Champ Placeholder
+      //- ul.nav.navbar-nav.navbar-right
+      //-   li
+      //-     a(href='#') Link
+      //-   li.dropdown
+      //-     a.dropdown-toggle(href='#', data-toggle='dropdown')
+      //-       | Dropdown
+      //-       b.caret
+      //-     ul.dropdown-menu
+      //-       li
+      //-         a(href='#') Action
+      //-       li
+      //-         a(href='#') Another action
+      //-       li
+      //-         a(href='#') Something else here
+      //-       li.divider
+      //-       li
+      //-         a(href='#') Separated link
+
+    // /.navbar-collapse
+  // /.container-fluid

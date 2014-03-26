@@ -1,8 +1,46 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: "MegaMan 2 Regular";
+  src: url("/fonts/megaman_2.eot?") format("eot"), url("/fonts/megaman_2.woff") format("woff"), url("/fonts/megaman_2.ttf") format("truetype"), url("/fonts/megaman_2.svg#MegaMan-2") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-a {
-  color: #00B7FF;
+/* line 4, ../sass/style.scss */
+* {
+  font-family: 'MegaMan 2 Regular';
+}
+
+/* line 8, ../sass/style.scss */
+#title-page {
+  height: 1000px;
+  width: 1000px;
+  display: block;
+}
+
+/* line 14, ../sass/style.scss */
+.title {
+  margin-left: 30%;
+  display: block;
+  font-size: 40px;
+}
+
+/* line 20, ../sass/style.scss */
+#title-text-header {
+  margin-top: 30%;
+  font-family: "MegaMan 2 Regular";
+  float: center;
+}
+
+/* line 27, ../sass/style.scss */
+#title-logo {
+  font-size: 150px;
+  color: green;
+  float: left;
+  fill: red;
+}
+
+/* line 34, ../sass/style.scss */
+.bit-tower {
+  fill: #FF00FF;
+  background-color: green;
 }
