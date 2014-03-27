@@ -1,25 +1,29 @@
 extends layout
 
 block projectList
-  .row
-    -if(projects != null)
-      -each project in projects
-        .col-sm-12.project
-          section.projectList.title(class='#{project.title}')
-            .name
-              a(href='/projects/#{project._id}')
-                h4.title #{project.title}
-            .description
-              p.descriptionProject #{project.description}
-            .date_begun
-              p.date_begunProject #{project.date_begun}
-            .date_ended
-              p.date_endedProject #{project.date_ended}
-            .github
-              a(href='#{project.github}')
-                p.commentsProject #{project.github}
-            .comments
-              p.commentsProject #{project.comments}
+  
+  .container
+      .row-fluid
+        .col-lg-10.col-md-10.col-sm-10#projects
+          .row
+            -if(projects != null)
+              -each project in projects
+                .col-sm-12.project
+                  section.projectList.title(class='#{project.title}')
+                    .name
+                      a(href='/projects/#{project._id}')
+                        h4.title #{project.title}
+                    .description
+                      p.descriptionProject #{project.description}
+                    .date_begun
+                      p.date_begunProject #{project.date_begun}
+                    .date_ended
+                      p.date_endedProject #{project.date_ended}
+                    .github
+                      a(href='#{project.github}')
+                        p.commentsProject #{project.github}
+                    .comments
+                      p.commentsProject #{project.comments}
 
 
 

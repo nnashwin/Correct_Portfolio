@@ -12,3 +12,8 @@
 // 		});
 // 	});
 // });
+$(window).resize(function() {
+	if($(".houdiniMenu").css("display") == "none" ) {
+		console.log('bye bye bye');
+	}
+});

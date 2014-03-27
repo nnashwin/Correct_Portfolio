@@ -1,3 +1,4 @@
+/* Large devices (large desktops, 1200px and up) */
 @font-face {
   font-family: "MegaMan 2 Regular";
   src: url("/fonts/megaman_2.eot?") format("eot"), url("/fonts/megaman_2.woff") format("woff"), url("/fonts/megaman_2.ttf") format("truetype"), url("/fonts/megaman_2.svg#MegaMan-2") format("svg");
@@ -5,42 +6,283 @@
   font-style: normal;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 * {
   font-family: 'MegaMan 2 Regular';
+  font-color: white;
 }
 
-/* line 8, ../sass/style.scss */
-#title-page {
-  height: 1000px;
-  width: 1000px;
-  display: block;
+/* line 15, ../sass/style.scss */
+.dropdown-menu > li > a {
+  color: white !important;
 }
 
-/* line 14, ../sass/style.scss */
-.title {
-  margin-left: 30%;
-  display: block;
-  font-size: 40px;
+/* line 19, ../sass/style.scss */
+nav {
+  background-color: #A42021;
+  padding-top: 6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 63px;
+  font-size: 20px;
 }
 
-/* line 20, ../sass/style.scss */
-#title-text-header {
-  margin-top: 30%;
-  font-family: "MegaMan 2 Regular";
-  float: center;
-}
-
-/* line 27, ../sass/style.scss */
-#title-logo {
-  font-size: 150px;
-  color: green;
-  float: left;
-  fill: red;
+/* line 28, ../sass/style.scss */
+.lg-background {
+  background-color: #A42021;
+  color: white !important;
+  font-color: #FFFFFF;
 }
 
 /* line 34, ../sass/style.scss */
+.lg-background:hover {
+  background-color: #FFFFFF;
+  color: black !important;
+}
+
+/* line 39, ../sass/style.scss */
+#intro {
+  height: 60%;
+}
+
+/* line 44, ../sass/style.scss */
+html {
+  min-height: 100%;
+  background-color: #3E303E;
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 44, ../sass/style.scss */
+  html {
+    padding-top: 0px;
+    width: 100%;
+  }
+}
+
+/* line 53, ../sass/style.scss */
+body {
+  background-color: #2B1E2C;
+  color: #FFFFFF;
+  min-height: 100%;
+}
+
+/* line 62, ../sass/style.scss */
+#bs-example-navbar-collapse-1 {
+  background-color: #A42021;
+  color: #FFFFFF;
+  height: 10%;
+}
+
+/* line 68, ../sass/style.scss */
+.navbar-nav {
+  font-size: 20px;
+}
+
+/* line 72, ../sass/style.scss */
+.navbar-brand {
+  color: white !important;
+  font-size: 20px;
+}
+
+/* line 77, ../sass/style.scss */
+.dropdown-toggle {
+  color: white !important;
+}
+
+/* line 81, ../sass/style.scss */
+.dropdown {
+  color: #FFFFFF;
+}
+
+/* line 85, ../sass/style.scss */
+a b {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/* line 89, ../sass/style.scss */
+.caret {
+  background-size: 12px;
+  height: 100%;
+  width: 10px;
+}
+
+/* line 95, ../sass/style.scss */
+.navbar-header {
+  background-color: #A42021;
+  color: #FFFFFF;
+}
+
+/* line 99, ../sass/style.scss */
+.navbar {
+  margin-bottom: 0px;
+  background-color: #A42021;
+}
+
+/* line 109, ../sass/style.scss */
+.container-fluid {
+  background-color: #2B1E2C;
+  height: 100%;
+}
+
+/* line 115, ../sass/style.scss */
+#title-page {
+  height: 600px;
+  width: 50%;
+  display: block;
+  padding-top: 70px;
+  float: left;
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 115, ../sass/style.scss */
+  #title-page {
+    padding-top: 0px;
+    width: 100%;
+    height: 300px;
+    float: center;
+  }
+}
+
+/* line 130, ../sass/style.scss */
+.title {
+  display: block;
+  font-size: 30px;
+  color: white !important;
+}
+
+/* line 137, ../sass/style.scss */
+#title-text-div {
+  width: 50%;
+  float: center;
+  padding-top: 80px;
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 137, ../sass/style.scss */
+  #title-text-div {
+    height: 300px !important;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 700px) {
+  /* line 147, ../sass/style.scss */
+  .holder {
+    padding-left: 200px;
+    margin-left: 100px;
+    height: 600px;
+    width: 800px;
+    margin: auto;
+  }
+}
+
+/* line 157, ../sass/style.scss */
+#title-text-header {
+  font-family: "MegaMan 2 Regular";
+  color: white !important;
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 157, ../sass/style.scss */
+  #title-text-header {
+    margin-top: 0px !important;
+    height: 200px !important;
+    margin-bottom: 0px !important;
+  }
+}
+
+/* line 171, ../sass/style.scss */
+#title-text-div {
+  width: 50%;
+}
+@media (min-width: 700px) {
+  /* line 171, ../sass/style.scss */
+  #title-text-div {
+    height: 40%;
+    width: 30%;
+    float: left;
+    margin-bottom: 170px;
+  }
+}
+@media (min-width: 700px) {
+  /* line 181, ../sass/style.scss */
+  #title-text-div #title-text-header {
+    width: 100%;
+    float: right;
+  }
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 171, ../sass/style.scss */
+  #title-text-div {
+    padding-top: 100px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 180px;
+  }
+}
+
+/* line 198, ../sass/style.scss */
+#title-logo {
+  font-size: 30px;
+  float: none;
+  height: 200px;
+  width: 40%;
+  padding-top: 20px;
+  margin-left: 110px;
+}
+@media (min-width: 400px) and (max-width: 699px) {
+  /* line 198, ../sass/style.scss */
+  #title-logo {
+    height: 240px;
+    width: 100%;
+    background-size: 200px 300px;
+    margin-left: 0px;
+    display: block;
+  }
+}
+
+/* line 221, ../sass/style.scss */
+.title {
+  margin-top: 120px;
+}
+
+/* line 225, ../sass/style.scss */
 .bit-tower {
-  fill: #FF00FF;
-  background-color: green;
+  background-color: #2B1E2C;
+}
+@media screen and (min-width: 700px) {
+  /* line 225, ../sass/style.scss */
+  .bit-tower {
+    margin-top: 90px;
+    margin-left: -20px;
+  }
+}
+
+/* line 235, ../sass/style.scss */
+.subtitle {
+  color: #FFFFFF;
+}
+
+/* line 244, ../sass/style.scss */
+.footer-container {
+  height: 80px;
+  width: 100%;
+}
+
+/* line 249, ../sass/style.scss */
+#footer {
+  font-size: 30px !important;
+  height: 100%;
+  padding-top: 23px;
+  padding-left: 30px;
+  background-color: #3E303E;
+  width: 100%;
+  text-align: center;
+  color: #1A687F;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  /* line 264, ../sass/style.scss */
+  .houdiniMenu {
+    display: none;
+  }
 }

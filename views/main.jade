@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  
   nav.navbar.navbar-default(role='navigation')
     .navbar-header
       button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
@@ -14,40 +15,42 @@ block content
         //- li
         //-   a(href='#') 
         li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | Menu
+          a.dropdown-toggle.houdiniMenu(href='#', data-toggle='dropdown')
+            | Places
             b.caret
-          ul.dropdown-menu
-            li
-              a(href='#') About
-            li
-              a(href='#') Projects
-            li.divider
-            li
-              a(href='#') Blog
-            li.divider
-  section#intro.billboard
-      div#title-page
-        img(src='/images/rook.svg')#title-logo.bit-tower.green.title
-        h1#title-text-header.center.title TYLER BORIGHT, THE CHAMP
-        p The Champ Placeholder
-      //- ul.nav.navbar-nav.navbar-right
-      //-   li
-      //-     a(href='#') Link
-      //-   li.dropdown
-      //-     a.dropdown-toggle(href='#', data-toggle='dropdown')
-      //-       | Dropdown
-      //-       b.caret
-      //-     ul.dropdown-menu
-      //-       li
-      //-         a(href='#') Action
-      //-       li
-      //-         a(href='#') Another action
-      //-       li
-      //-         a(href='#') Something else here
-      //-       li.divider
-      //-       li
-      //-         a(href='#') Separated link
-
-    // /.navbar-collapse
-  // /.container-fluid
+          ul.dropdown-menu.lg-background
+            li.lg-background
+              a.lg-background(href='#') About
+            li.lg-background
+              a.lg-background(href='#') Projects
+            li.divider.lg-background
+            li.lg-background
+              a.lg-background(href='#') Blog
+            li.divider.lg-background
+  .container-fluid
+    div#intro.billboard
+      div.holder  
+        div#title-page
+          img(src='/images/rook.svg')#title-logo.bit-tower.green.title
+        div#title-text-div
+            h1#title-text-header.center.title.title-text TYLER BORIGHT, WEB DEVELOPER
+        //- ul.nav.navbar-nav.navbar-right
+        //-   li
+        //-     a(href='#') Link
+        //-   li.dropdown
+        //-     a.dropdown-toggle(href='#', data-toggle='dropdown')
+        //-       | Dropdown
+        //-       b.caret
+        //-     ul.dropdown-menu
+        //-       li
+        //-         a(href='#') Action
+        //-       li
+        //-         a(href='#') Another action
+        //-       li
+        //-         a(href='#') Something else here
+        //-       li.divider
+        //-       li
+        //-         a(href='#') Separated link
+  .footer-container
+    div#footer.container-fluid
+      div.footer Contact
