@@ -27,12 +27,18 @@ getAllProjects = function (req, res) {
 
 //	function to render create project page
 showCreateProject = function (req, res) {
+	if(req.session.admin) {
+	console.log(req.session.admin);
 	res.render('create-project');
+	} else {
+		res.send("Hey!  You're not Kingtak!")
+	}
 }; // ends showCreateProject page
 
 
 // post function to create new project
 createNewProject = function (req, res) {
+	if(req.session.admin) {
 	var new_title = req.body.title;
 	var new_description = req.body.description;
 	var new_date_begun = req.body.date_begun;
@@ -58,7 +64,10 @@ createNewProject = function (req, res) {
 
 	res.redirect('/projects');
 
-}; //ends createNewProject
+} else {
+	res.redirect('/projects');
+	} 
+}//ends createNewProject
 
 // renders form by which user can edit a project
 editProject = function(req, res) {

@@ -7,17 +7,20 @@
 }
 
 /* line 10, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 * {
   font-family: 'MegaMan 2 Regular';
   font-color: white;
 }
 
 /* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .dropdown-menu > li > a {
   color: white !important;
 }
 
 /* line 19, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 nav {
   background-color: #A42021;
   padding-top: 6px;
@@ -28,6 +31,7 @@ nav {
 }
 
 /* line 28, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 .lg-background {
   background-color: #A42021;
   color: white !important;
@@ -35,30 +39,35 @@ nav {
 }
 
 /* line 34, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .lg-background:hover {
   background-color: #FFFFFF;
   color: black !important;
 }
 
 /* line 39, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 #intro {
   height: 60%;
 }
 
 /* line 44, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 html {
   min-height: 100%;
   background-color: #3E303E;
 }
+
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 44, ../sass/style.scss */
+  /* line 55, ../sass/style.scss */
   html {
     padding-top: 0px;
     width: 100%;
   }
 }
-
 /* line 53, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 body {
   background-color: #2B1E2C;
   color: #FFFFFF;
@@ -66,6 +75,7 @@ body {
 }
 
 /* line 62, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 #bs-example-navbar-collapse-1 {
   background-color: #A42021;
   color: #FFFFFF;
@@ -73,33 +83,39 @@ body {
 }
 
 /* line 68, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .navbar-nav {
   font-size: 20px;
 }
 
 /* line 72, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .navbar-brand {
   color: white !important;
   font-size: 20px;
 }
 
 /* line 77, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .dropdown-toggle {
   color: white !important;
 }
 
 /* line 81, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .dropdown {
   color: #FFFFFF;
 }
 
 /* line 85, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 a b {
   color: #FFFFFF;
   font-size: 20px;
 }
 
 /* line 89, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .caret {
   background-size: 12px;
   height: 100%;
@@ -107,24 +123,28 @@ a b {
 }
 
 /* line 95, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .navbar-header {
   background-color: #A42021;
   color: #FFFFFF;
 }
 
 /* line 99, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .navbar {
   margin-bottom: 0px;
   background-color: #A42021;
 }
 
 /* line 109, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .container-fluid {
   background-color: #2B1E2C;
   height: 100%;
 }
 
 /* line 115, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 #title-page {
   height: 600px;
   width: 50%;
@@ -132,8 +152,10 @@ a b {
   padding-top: 70px;
   float: left;
 }
+
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 115, ../sass/style.scss */
+  /* line 137, ../sass/style.scss */
   #title-page {
     padding-top: 0px;
     width: 100%;
@@ -141,8 +163,8 @@ a b {
     float: center;
   }
 }
-
 /* line 130, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .title {
   display: block;
   font-size: 30px;
@@ -150,50 +172,57 @@ a b {
 }
 
 /* line 137, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 #title-text-div {
   width: 50%;
   float: center;
   padding-top: 80px;
 }
+
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 137, ../sass/style.scss */
+  /* line 160, ../sass/style.scss */
   #title-text-div {
     height: 300px !important;
     padding-top: 0px;
   }
 }
-
 @media (min-width: 700px) {
   /* line 147, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   .holder {
-    padding-left: 200px;
+    padding-left: 80px;
     margin-left: 100px;
     height: 600px;
     width: 800px;
     margin: auto;
   }
 }
-
 /* line 157, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #title-text-header {
   font-family: "MegaMan 2 Regular";
   color: white !important;
 }
+
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 157, ../sass/style.scss */
+  /* line 184, ../sass/style.scss */
   #title-text-header {
     margin-top: 0px !important;
     height: 200px !important;
     margin-bottom: 0px !important;
   }
 }
-
 /* line 171, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #title-text-div {
   width: 50%;
 }
+
 @media (min-width: 700px) {
   /* line 171, ../sass/style.scss */
+  /* line 197, ../sass/style.scss */
   #title-text-div {
     height: 40%;
     width: 30%;
@@ -203,6 +232,7 @@ a b {
 }
 @media (min-width: 700px) {
   /* line 181, ../sass/style.scss */
+  /* line 206, ../sass/style.scss */
   #title-text-div #title-text-header {
     width: 100%;
     float: right;
@@ -210,6 +240,7 @@ a b {
 }
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 171, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   #title-text-div {
     padding-top: 100px;
     width: 100%;
@@ -218,8 +249,8 @@ a b {
     height: 180px;
   }
 }
-
 /* line 198, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #title-logo {
   font-size: 30px;
   float: none;
@@ -228,8 +259,10 @@ a b {
   padding-top: 20px;
   margin-left: 110px;
 }
+
 @media (min-width: 400px) and (max-width: 699px) {
   /* line 198, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   #title-logo {
     height: 240px;
     width: 100%;
@@ -238,36 +271,41 @@ a b {
     display: block;
   }
 }
-
 /* line 221, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .title {
   margin-top: 120px;
 }
 
 /* line 225, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .bit-tower {
   background-color: #2B1E2C;
 }
+
 @media screen and (min-width: 700px) {
   /* line 225, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   .bit-tower {
     margin-top: 90px;
     margin-left: -20px;
   }
 }
-
 /* line 235, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .subtitle {
   color: #FFFFFF;
 }
 
 /* line 244, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .footer-container {
   height: 80px;
   width: 100%;
 }
 
 /* line 249, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 #footer {
   font-size: 30px !important;
   height: 100%;
@@ -282,7 +320,54 @@ a b {
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
   /* line 264, ../sass/style.scss */
+  /* line 285, ../sass/style.scss */
   .houdiniMenu {
     display: none;
   }
+}
+/* stylings for project list */
+/* line 292, ../sass/style.scss */
+.title {
+  font-size: 20px;
+}
+
+/* line 296, ../sass/style.scss */
+#projects-title {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-bottom: -80px;
+  margin-top: 50px;
+}
+
+/* line 305, ../sass/style.scss */
+#blog-title {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  margin-bottom: -80px;
+  margin-top: 50px;
+}
+
+/* line 318, ../sass/style.scss */
+#project-list {
+  margin: auto;
+  width: 400px;
+  word-wrap: break-word;
+}
+
+/* line 324, ../sass/style.scss */
+#blog-list {
+  margin: auto;
+  width: 400px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* line 331, ../sass/style.scss */
+#container-projects {
+  background-color: #2B1E2C;
+  color: #FFFFFF;
 }

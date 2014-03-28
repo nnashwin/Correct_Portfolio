@@ -1,19 +1,18 @@
 extends layout
 
-block blogPosts
-  
-  .container
-      .row-fluid
-        .col-lg-10.col-md-10.col-sm-10#postList
-      .row
-        -if(posts != null)
-          -each post in posts
-            .col-sm-12.post
-              section.postList.title(class='#{post.title}')
-                .name
-                  a(href='/blog/#{post._id}')
-                    h4.title #{post.title}
-                .content
-                  p.contentPost #{post.content}
-                .date
-                  p.datePosted #{post.created_at}
+block projectList
+
+      .container-fluid#container-projects
+          .row
+            //- .col-lg-10.col-md-10.col-sm-10
+            #projects
+              p#blog-title Blog Posts
+              .row#blog-list
+                if posts != null
+                  - each post in posts
+                    div.project-div
+                      div.title
+                        a( href='http://localhost:3000/blog/#{post._id}' ) #{post.title}
+                        p.description #{post.content}
+
+

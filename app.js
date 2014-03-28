@@ -13,6 +13,7 @@ var main = require('./routes/main');
 var projects = require('./routes/projects');
 var comments = require('./routes/comments');
 var blog = require('./routes/blog');
+var login = require('./routes/login');
 var app = express();
 
 // all environments
@@ -26,10 +27,13 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.cookieParser());
+app.use(express.session({secret: "SEECCCREEEETTTSSSSS"}));
 app.use(main);
 app.use(projects);
 app.use(comments);
 app.use(blog);
+app.use(login);
 
 // mongoose.connect('mongodb://localhost/portfolio');
 

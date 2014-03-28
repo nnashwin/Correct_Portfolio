@@ -36,7 +36,7 @@ showBlog = function(req, res) {
 	});
 } // ends showBlog
 
-createNewPost = function(req, res) {
+createNewBlog = function(req, res) {
 	var new_title = req.body.title;
 	var new_content = req.body.content;
 	// var date = new Date();
@@ -66,7 +66,7 @@ showCreatePostForm = function(req, res) {
 module.exports = function() {
 	app.get('/blog', this.showBlog);
 	app.get('/blog/create-post', this.showCreatePostForm)
-	app.post('/blog', this.createNewPost);
+	app.post('/blog', this.createNewBlog);
 	return app;
 }();
 
