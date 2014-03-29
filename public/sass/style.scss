@@ -6,6 +6,16 @@
   font-style: normal;
 }
 
+label {
+  font-color: white;
+  color: white;
+}
+
+.text-center {
+  font-color: white;
+  color: white;
+}
+
 /* line 10, ../sass/style.scss */
 * {
   font-family: 'MegaMan 2 Regular';
@@ -35,7 +45,7 @@ nav {
 }
 
 /* line 34, ../sass/style.scss */
-.lg-background:hover {
+.lg-background > a:hover {
   background-color: #FFFFFF;
   color: black !important;
 }
@@ -140,6 +150,10 @@ a b {
     height: 300px;
     float: center;
   }
+}
+
+.dropdown:hover {
+  background-color: #A42021;
 }
 
 /* line 130, ../sass/style.scss */

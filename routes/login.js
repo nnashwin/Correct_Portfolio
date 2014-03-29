@@ -18,6 +18,11 @@ authLogin = function(req, res) {
 		}
 }
 
+authLogout  = function(req, res) {
+	req.session.destroy();
+	res.redirect('/');
+}
+
 showLoginForm = function(req, res) {
 	res.render('login-form');
 };
@@ -25,5 +30,6 @@ showLoginForm = function(req, res) {
 module.exports = function() {
 	app.get('/login', this.showLoginForm);
 	app.post('/login', this.authLogin);
+	app.get('/logout', this.authLogout);
 	return app;
 }();
