@@ -29,13 +29,23 @@ var commentModel = mongoose.model('comment', commentSchema);
 
 
 // show all posts in blog
-showBlog = function(req, res) {
+showBlogs = function(req, res) {
 	postModel.find(function(err, posts) {
 		res.render('blog', {
 			posts: posts
 		});
 	});
 } // ends showBlog
+
+//show single blog when clicked upon
+
+showBlogPost = function(req, res) {
+	postModel.findOne( {_id: req.params.id }, function(err, post) {
+		res.render('blogPost', {
+			post: post
+		});
+	});
+} // ends showBlogPost
 
 createNewBlog = function(req, res) {
 	var new_title = req.body.title;
@@ -65,8 +75,9 @@ showCreatePostForm = function(req, res) {
 
 
 module.exports = function() {
-	app.get('/blog', this.showBlog);
-	app.get('/blog/create-post', this.showCreatePostForm)
+	app.get('/blog', this.showBlogs);
+	app.get('/blog/create-post', this.showCreatePostForm);
+	app.get('/blog/:id', this.showBlogPost);
 	app.post('/blog', this.createNewBlog);
 	return app;
 }();
