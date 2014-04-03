@@ -1,7 +1,7 @@
 var express = require('express');
 var app = module.exports = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/portfolio');
+mongoose.connect('mongodb://ultraman:labixiaoxin@ds037097.mongolab.com:37097/firstdatabase');
 
 
 var projectSchema = new mongoose.Schema({
@@ -31,7 +31,7 @@ showCreateProject = function (req, res) {
 	console.log(req.session.admin);
 	res.render('create-project');
 	} else {
-		res.send("Hey!  You're not Kingtak!")
+		res.send('You are not authorized to view this page')
 	}
 }; // ends showCreateProject page
 
@@ -39,32 +39,32 @@ showCreateProject = function (req, res) {
 // post function to create new project
 createNewProject = function (req, res) {
 	if(req.session.admin) {
-	var new_title = req.body.title;
-	var new_description = req.body.description;
-	var new_date_begun = req.body.date_begun;
-	var new_date_ended = req.body.date_ended;
-	var new_github = req.body.github;
-	var new_comments = req.body.comments;
+		var new_title = req.body.title;
+		var new_description = req.body.description;
+		var new_date_begun = req.body.date_begun;
+		var new_date_ended = req.body.date_ended;
+		var new_github = req.body.github;
+		var new_comments = req.body.comments;
 
-	//create new job post from model
-	var new_project = new projectModel({
-		title: new_title,
-		description: new_description,
-		date_begun: new_date_begun,
-		date_ended: new_date_ended,
-		github: new_github,
-		comments: new_comments
-	}); //ends new_project variable
+		//create new job post from model
+		var new_project = new projectModel({
+			title: new_title,
+			description: new_description,
+			date_begun: new_date_begun,
+			date_ended: new_date_ended,
+			github: new_github,
+			comments: new_comments
+		}); //ends new_project variable
 
-	new_project.save(function(err) {
-		if (err) {
-			console.log('error: could not save your project (fool)')
-		}
+		new_project.save(function(err) {
+			if (err) {
+				console.log('error: could not save your project (fool)')
+			}
 	}); //saves new_project
 
 	res.redirect('/projects');
 
-} else {
+	} else {
 	res.redirect('/projects');
 	} 
 }//ends createNewProject

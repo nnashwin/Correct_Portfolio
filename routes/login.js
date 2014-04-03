@@ -1,16 +1,12 @@
 var express = require('express');
 var app = module.exports = express();
 var mongoose = require('mongoose');
-
+var crypt = require('sha1');
 
 authLogin = function(req, res) {
-	if (req.body.username === "ttymed" && req.body.password === "I") {
+	if (req.body.username === "ttymed" && crypt(req.body.password) === "CA73AB65568CD125C2D27A22BBD9E863C10B675D") {
 		req.session.admin = req.body.username;
-		console.log(req.session.admin);
-		// data = {
-		// 	redirect: '/projects',
-		// 	admin: req.session.admin,
-		// }	
+		console.log(req.session.admin);	
 		res.redirect('/projects');
 		console.log('req.session.admin'); 
 	} else {

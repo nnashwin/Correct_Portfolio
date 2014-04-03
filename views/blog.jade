@@ -15,5 +15,6 @@ block projectList
                         a( href='http://localhost:3000/blog/#{post._id}' ) #{post.title}
                         p.content #{post.content}
                         p.description #{post.description}
+                        p.created_at Posted at #{moment(post.created_at).format("MMMM Do YYYY")}
 
 

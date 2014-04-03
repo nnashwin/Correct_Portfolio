@@ -70,7 +70,7 @@ html {
   background-color: #3E303E;
 }
 
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 44, ../sass/style.scss */
   /* line 69, ../sass/style.scss */
   html {
@@ -165,7 +165,7 @@ a b {
   float: left;
 }
 
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 115, ../sass/style.scss */
   /* line 151, ../sass/style.scss */
   #title-page {
@@ -196,7 +196,7 @@ a b {
   padding-top: 80px;
 }
 
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 137, ../sass/style.scss */
   /* line 178, ../sass/style.scss */
   #title-text-div {
@@ -222,7 +222,7 @@ a b {
   color: white !important;
 }
 
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 157, ../sass/style.scss */
   /* line 202, ../sass/style.scss */
   #title-text-header {
@@ -255,7 +255,7 @@ a b {
     float: right;
   }
 }
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 171, ../sass/style.scss */
   /* line 231, ../sass/style.scss */
   #title-text-div {
@@ -277,7 +277,7 @@ a b {
   margin-left: 110px;
 }
 
-@media (min-width: 400px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 198, ../sass/style.scss */
   /* line 251, ../sass/style.scss */
   #title-logo {
