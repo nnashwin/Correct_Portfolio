@@ -181,12 +181,13 @@ a b {
     width: 100%;
     height: 300px;
     float: center;
+    margin: auto;
   }
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 115, ../sass/style.scss */
-  /* line 166, ../../sass/style.scss */
+  /* line 167, ../../sass/style.scss */
   #title-page {
     padding-top: 0px;
     width: 100%;
@@ -194,13 +195,13 @@ a b {
     float: center;
   }
 }
-/* line 174, ../../sass/style.scss */
+/* line 175, ../../sass/style.scss */
 .dropdown:hover {
   background-color: #A42021;
 }
 
 /* line 130, ../sass/style.scss */
-/* line 179, ../../sass/style.scss */
+/* line 180, ../../sass/style.scss */
 .title {
   display: block;
   font-size: 30px;
@@ -208,7 +209,7 @@ a b {
 }
 
 /* line 137, ../sass/style.scss */
-/* line 186, ../../sass/style.scss */
+/* line 187, ../../sass/style.scss */
 #title-text-div {
   width: 50%;
   float: center;
@@ -217,7 +218,7 @@ a b {
 
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 137, ../sass/style.scss */
-  /* line 193, ../../sass/style.scss */
+  /* line 194, ../../sass/style.scss */
   #title-text-div {
     height: 300px !important;
     padding-top: 0px;
@@ -225,7 +226,7 @@ a b {
 }
 @media (min-width: 700px) {
   /* line 147, ../sass/style.scss */
-  /* line 201, ../../sass/style.scss */
+  /* line 202, ../../sass/style.scss */
   .holder {
     padding-left: 80px;
     margin-left: 100px;
@@ -235,7 +236,7 @@ a b {
   }
 }
 /* line 157, ../sass/style.scss */
-/* line 211, ../../sass/style.scss */
+/* line 212, ../../sass/style.scss */
 #about-text {
   font-family: "MegaMan 2 Regular";
   color: white !important;
@@ -243,22 +244,22 @@ a b {
 
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 157, ../sass/style.scss */
-  /* line 217, ../../sass/style.scss */
+  /* line 218, ../../sass/style.scss */
   #title-text-header {
     margin-top: 0px !important;
     height: 200px !important;
     margin-bottom: 0px !important;
   }
 }
-/* line 224, ../../sass/style.scss */
+/* line 225, ../../sass/style.scss */
 #about-text {
   padding-top: 140px;
   font-size: 20px;
 }
 @media (min-width: 320px) and (max-width: 699px) {
-  /* line 224, ../../sass/style.scss */
+  /* line 225, ../../sass/style.scss */
   #about-text {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 20px;
     font-color: #FFFFFF;
     padding-top: 0px;
@@ -266,14 +267,14 @@ a b {
 }
 
 /* line 171, ../sass/style.scss */
-/* line 239, ../../sass/style.scss */
+/* line 240, ../../sass/style.scss */
 #title-text-div {
   width: 50%;
 }
 
 @media (min-width: 700px) {
   /* line 171, ../sass/style.scss */
-  /* line 244, ../../sass/style.scss */
+  /* line 245, ../../sass/style.scss */
   #title-text-div {
     height: 40%;
     width: 30%;
@@ -283,7 +284,7 @@ a b {
 }
 @media (min-width: 700px) {
   /* line 181, ../sass/style.scss */
-  /* line 253, ../../sass/style.scss */
+  /* line 254, ../../sass/style.scss */
   #title-text-div #title-text-header {
     width: 100%;
     float: right;
@@ -291,9 +292,9 @@ a b {
 }
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 171, ../sass/style.scss */
-  /* line 260, ../../sass/style.scss */
+  /* line 261, ../../sass/style.scss */
   #title-text-div {
-    padding-top: 100px;
+    padding-top: 40px;
     width: 100%;
     display: block;
     text-align: center;
@@ -301,7 +302,7 @@ a b {
   }
 }
 /* line 198, ../sass/style.scss */
-/* line 270, ../../sass/style.scss */
+/* line 271, ../../sass/style.scss */
 #title-logo {
   font-size: 30px;
   float: none;
@@ -313,49 +314,50 @@ a b {
 
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 198, ../sass/style.scss */
-  /* line 280, ../../sass/style.scss */
+  /* line 281, ../../sass/style.scss */
   #title-logo {
     height: 240px;
     width: 100%;
     background-size: 200px 300px;
+    margin-left: 0px;
     display: block;
   }
 }
 /* line 221, ../sass/style.scss */
-/* line 289, ../../sass/style.scss */
+/* line 291, ../../sass/style.scss */
 .title {
   margin-top: 120px;
 }
 
 /* line 225, ../sass/style.scss */
-/* line 294, ../../sass/style.scss */
+/* line 296, ../../sass/style.scss */
 .bit-tower {
   background-color: #2B1E2C;
 }
 
 @media screen and (min-width: 700px) {
   /* line 225, ../sass/style.scss */
-  /* line 299, ../../sass/style.scss */
+  /* line 301, ../../sass/style.scss */
   .bit-tower {
     margin-top: 60px;
     margin-left: -20px;
   }
 }
 /* line 235, ../sass/style.scss */
-/* line 306, ../../sass/style.scss */
+/* line 308, ../../sass/style.scss */
 .subtitle {
   color: #FFFFFF;
 }
 
 /* line 244, ../sass/style.scss */
-/* line 311, ../../sass/style.scss */
+/* line 313, ../../sass/style.scss */
 .footer-container {
   height: 80px;
   width: 100%;
 }
 
 /* line 249, ../sass/style.scss */
-/* line 317, ../../sass/style.scss */
+/* line 319, ../../sass/style.scss */
 #footer {
   font-size: 30px !important;
   height: 100%;
@@ -370,18 +372,18 @@ a b {
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) {
   /* line 264, ../sass/style.scss */
-  /* line 331, ../../sass/style.scss */
+  /* line 333, ../../sass/style.scss */
   .houdiniMenu {
     display: none;
   }
 }
 /* stylings for project list */
-/* line 338, ../../sass/style.scss */
+/* line 340, ../../sass/style.scss */
 .title {
   font-size: 20px;
 }
 
-/* line 342, ../../sass/style.scss */
+/* line 344, ../../sass/style.scss */
 #projects-title {
   font-size: 25px;
   margin-left: auto;
@@ -391,7 +393,7 @@ a b {
   margin-top: 50px;
 }
 
-/* line 351, ../../sass/style.scss */
+/* line 353, ../../sass/style.scss */
 #blog-title {
   font-size: 25px;
   margin-left: auto;
@@ -401,14 +403,14 @@ a b {
   margin-top: 50px;
 }
 
-/* line 364, ../../sass/style.scss */
+/* line 366, ../../sass/style.scss */
 #project-list {
   margin: auto;
   width: 400px;
   word-wrap: break-word;
 }
 
-/* line 370, ../../sass/style.scss */
+/* line 372, ../../sass/style.scss */
 #blog-list {
   margin: auto;
   width: 400px;
@@ -416,7 +418,7 @@ a b {
   word-wrap: break-word;
 }
 
-/* line 377, ../../sass/style.scss */
+/* line 379, ../../sass/style.scss */
 #container-projects {
   background-color: #2B1E2C;
   color: #FFFFFF;

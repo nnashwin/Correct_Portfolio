@@ -159,6 +159,7 @@ a b {
     width: 100%;
     height: 300px;
     float: center;
+    margin: auto;
   }
 }
 @media (min-width: 320px) and (max-width: 699px) {
@@ -224,7 +225,7 @@ a b {
 #about-text {
   @media (min-width: 320px) and (max-width: 699px) {
   // width: 30%;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 20px;
   // float: left;
   font-color: #FFFFFF;
@@ -258,7 +259,7 @@ a b {
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 171, ../sass/style.scss */
   #title-text-div {
-    padding-top: 100px;
+    padding-top: 40px;
     width: 100%;
     display: block;
     text-align: center;
@@ -281,6 +282,7 @@ a b {
     height: 240px;
     width: 100%;
     background-size: 200px 300px;
+    margin-left: 0px;
     display: block;
   }
 }
