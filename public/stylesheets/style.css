@@ -252,28 +252,28 @@ a b {
 }
 /* line 224, ../../sass/style.scss */
 #about-text {
-  padding-top: 150px;
+  padding-top: 140px;
   font-size: 20px;
-  width: 800px;
 }
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 699px) {
   /* line 224, ../../sass/style.scss */
   #about-text {
-    margin-top: 96px;
-    font-size: 8px;
+    margin-top: 40px;
+    font-size: 20px;
     font-color: #FFFFFF;
+    padding-top: 0px;
   }
 }
 
 /* line 171, ../sass/style.scss */
-/* line 238, ../../sass/style.scss */
+/* line 239, ../../sass/style.scss */
 #title-text-div {
   width: 50%;
 }
 
 @media (min-width: 700px) {
   /* line 171, ../sass/style.scss */
-  /* line 243, ../../sass/style.scss */
+  /* line 244, ../../sass/style.scss */
   #title-text-div {
     height: 40%;
     width: 30%;
@@ -283,7 +283,7 @@ a b {
 }
 @media (min-width: 700px) {
   /* line 181, ../sass/style.scss */
-  /* line 252, ../../sass/style.scss */
+  /* line 253, ../../sass/style.scss */
   #title-text-div #title-text-header {
     width: 100%;
     float: right;
@@ -291,7 +291,7 @@ a b {
 }
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 171, ../sass/style.scss */
-  /* line 259, ../../sass/style.scss */
+  /* line 260, ../../sass/style.scss */
   #title-text-div {
     padding-top: 100px;
     width: 100%;
@@ -301,7 +301,7 @@ a b {
   }
 }
 /* line 198, ../sass/style.scss */
-/* line 269, ../../sass/style.scss */
+/* line 270, ../../sass/style.scss */
 #title-logo {
   font-size: 30px;
   float: none;
@@ -313,12 +313,11 @@ a b {
 
 @media (min-width: 320px) and (max-width: 699px) {
   /* line 198, ../sass/style.scss */
-  /* line 279, ../../sass/style.scss */
+  /* line 280, ../../sass/style.scss */
   #title-logo {
     height: 240px;
     width: 100%;
     background-size: 200px 300px;
-    margin-left: 0px;
     display: block;
   }
 }
